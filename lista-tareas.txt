@@ -1,3 +1,12 @@
 1- instalar adminlte 
+	- https://github.com/acacha/adminlte-laravel
 2- integrar login
 3- administrar administracion de plantilla desde adminlte
+
+
+plantilla adminlte
+https://github.com/almasaeed2010/AdminLTE (sin laravel)
+
+
+tutoriales a seguir
+http://azlearning.online/08-integrando-la-plantilla-adminlte-manualmente-en-laravel-54_Hq9TVdXI7uR4
