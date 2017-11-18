@@ -78,7 +78,7 @@ return [
     |
      */
 
-    'locale'          => 'en',
+    'locale'          => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
     |
      */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -181,6 +181,8 @@ return [
          */
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
 
+        Collective\Html\HtmlServiceProvider::class,
+
     ],
 
     /*
@@ -233,6 +235,9 @@ return [
          * Acacha AdminLTE template alias
          */
         'AdminLTE'     => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
+
+        'Form'         => Collective\Html\FormFacade::class,
+        'HTML'         => Collective\Html\HtmlFacade::class,
 
     ],
 

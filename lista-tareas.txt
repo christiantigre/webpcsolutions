@@ -10,3 +10,7 @@ https://github.com/almasaeed2010/AdminLTE (sin laravel)
 
 tutoriales a seguir
 http://azlearning.online/08-integrando-la-plantilla-adminlte-manualmente-en-laravel-54_Hq9TVdXI7uR4
+
+
+
+	php artisan crud:view template --fields="titletemplate#string; sectioncolor#string colorfirts#string colorsecond#string colorthird#string colorfondo#string colortext1#string colortext2#string colortext3#string " --view-path="Admin" --route-group=admin --form-helper=html
