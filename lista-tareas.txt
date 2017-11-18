@@ -1,0 +1,3 @@
+1- instalar adminlte 
+2- integrar login
+3- administrar administracion de plantilla desde adminlte

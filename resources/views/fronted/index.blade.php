@@ -57,5 +57,3 @@ http://www.templatemo.com/tm-416-xenon
 
 </body>
 </html>
-
-<!--tareas: -- realizar la integración de adminlte-->
