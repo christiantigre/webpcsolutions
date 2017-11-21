@@ -20,12 +20,9 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('adminlte::layouts.app');
+        return view('home');
     }
 
-    public function conftemplate(){
-        //return view('admin.partials.template.view'):
-    }
 
     /**
      * Show the form for creating a new resource.
