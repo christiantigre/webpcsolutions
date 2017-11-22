@@ -12,7 +12,7 @@
                                 <em>Xenon</em> Design
                                 <span class="logo-s"></span>
                             </a>
-                        </div>  
+                        </div>
                     </div>
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="nav navbar-nav navbar-right">
@@ -24,7 +24,7 @@
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
-                </div> 
+                </div>
             </div>
         </nav>
     </header>

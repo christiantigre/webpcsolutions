@@ -16,13 +16,18 @@ class CreateTemplatesTable extends Migration
             $table->increments('id');
             $table->string('titletemplate',191)->nullable();
             $table->string('sectioncolor',10)->nullable();
-            $table->string('colorfirt',10)->nullable();
+            $table->string('colorfirst',10)->nullable();
             $table->string('colorsecond',10)->nullable();
             $table->string('colorthird',10)->nullable();
             $table->string('colorfondo',10)->nullable();
-            $table->string('colortext1',10)->nullable();
-            $table->string('colortext2',10)->nullable();
-            $table->string('colortext3',10)->nullable();
+            $table->string('colortextnavone',10)->nullable();
+            $table->string('colortextnavsec',10)->nullable();
+            $table->string('colortextnavact',10)->nullable();
+            $table->string('colortexttitles',10)->nullable();
+            $table->string('colortextsubtitles',10)->nullable();
+            $table->string('colortextparagraph',10)->nullable();
+            $table->string('colortextlink',10)->nullable();
+            $table->boolean('activo',1)->default(0)->nullable();
             $table->timestamps();
         });
     }

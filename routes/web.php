@@ -11,11 +11,10 @@
 |
  */
 
-Route::get('/', function () {
-    return view('fronted.index');
-});
+
 
 Route::group(['prefix' => 'admin'], function () {
+    Route::get('/inicio', 'Admin\\AdminController@index');
     Route::get('/', 'Admin\HomeController@index');
     Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
     Route::post('/login', 'AdminAuth\LoginController@login');
@@ -33,6 +32,6 @@ Route::group(['prefix' => 'admin'], function () {
 
 Auth::routes();
 
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();

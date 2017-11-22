@@ -14,6 +14,8 @@
 ][config('adminlte.layout')] : '') . (config('adminlte.collapse_sidebar') ? ' sidebar-collapse ' : ''))
 
 @section('body')
+
+
     <div class="wrapper">
 
         <!-- Main Header -->
@@ -131,6 +133,13 @@
 @stop
 
 @section('adminlte_js')
+
+    <!--Integración de delay mensaje flash-->
+    <script>
+$('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+</script>
+
+
     <script src="{{ asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
     @stack('js')
     @yield('js')

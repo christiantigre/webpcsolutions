@@ -25,7 +25,22 @@ class template extends Model
      *
      * @var array
      */
-    protected $fillable = ['titletemplate', 'sectioncolor'];
+    protected $fillable = [
+        'titletemplate',
+        'sectioncolor',
+         'colorfirst',
+         'colorsecond',
+         'colorthird',
+         'colorfondo',
+         'colortextnavone',
+         'colortextnavsec',
+         'colortextnavact',
+         'colortexttitles',
+         'colortextsubtitles',
+         'colortextparagraph',
+         'colortextlink',
+         'activo'
+     ];
 
     
 }

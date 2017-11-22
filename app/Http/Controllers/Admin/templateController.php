@@ -59,8 +59,17 @@ class templateController extends Controller
     {
         
         $requestData = $request->all();
+        try {
+
+
         
-        template::create($requestData);
+            template::create($requestData);
+            flash('Guardado Correctamente')->success();
+            
+        } catch (Exception $e) {
+            flash('Ocurrió un error al guardar '.$e)->error();
+            
+        }
 
         return redirect('admin/template')->with('flash_message', 'template added!');
     }
@@ -106,8 +115,15 @@ class templateController extends Controller
         
         $requestData = $request->all();
         
+        try {
+            
         $template = template::findOrFail($id);
         $template->update($requestData);
+        flash('Actualizado Correctamente')->success();
+
+        } catch (Exception $e) {
+            flash('Ocurrió un error al guardar '.$e)->error();
+        }
 
         return redirect('admin/template')->with('flash_message', 'template updated!');
     }
